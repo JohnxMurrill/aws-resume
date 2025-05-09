@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Murrill - Resume</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-bg: #f9f9f9;
+            --dark-text: #333;
+            --light-text: #767676;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            color: var(--light-text);
+            font-size: 1.1rem;
+        }
+        
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .job, .education {
+            margin-bottom: 25px;
+        }
+        
+        .job-header, .edu-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .company, .degree {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+        
+        .date {
+            color: var(--light-text);
+            font-style: italic;
+        }
+        
+        .position, .university {
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .skills-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .skills-category {
+            margin-bottom: 15px;
+        }
+        
+        .skills-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+        
+        .skills-list {
+            color: var(--light-text);
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .job-skills {
+            margin-top: 5px;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        .visitor-counter {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--secondary-color);
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .job-header, .edu-header {
+                flex-direction: column;
+            }
+            
+            .date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Murrill</h1>
+        <div class="contact-info">
+            Denham Springs, LA | (225) 329-4505 | <a href="mailto:murrill.john@gmail.com">murrill.john@gmail.com</a> | <a href="https://github.com/JohnxMurrill" target="_blank">github.com/JohnxMurrill</a>
+        </div>
+    </header>
+    
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Software professional with a strong foundation in software development and statistical analysis. Proven success in building scalable, performant tools and improving modeling workflows. Experienced in cloud platforms, data analysis, data visualization, development, and communication in agile multi-functional teams.</p>
+    </section>
+    
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-section">
+            <div class="skills-category">
+                <div class="skills-title">Languages:</div>
+                <div class="skills-list">Python, C#, Java, SQL, HTML/CSS, JavaScript, Matlab, Mathematica</div>
+            </div>
+            <div class="skills-category">
+                <div class="skills-title">Tools:</div>
+                <div class="skills-list">AWS, Terraform, Github + GitHub Actions, Linux, Docker, Pandas, Numpy, PyTorch, Tableau</div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Work Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div class="company">Tax Foundation — Washington, DC - Remote</div>
+                <div class="date">Jan 2023 – 2025</div>
+            </div>
+            <div class="position">Research Software Developer</div>
+            <div class="job-skills">Skills: AWS, Python, Pandas, Pyarrow, Github, Github Actions, TravisCI</div>
+            <ul>
+                <li>Refactored 20,000+ lines of legacy tax microsimulation code using vectorized NumPy and Pandas operations, reducing runtime by 70% and memory usage by 50%.</li>
+                <li>Added functionality to the model to filter, query, and visualize simulation output data via Pandas operations in tandem with in-house visualization tools to create distributional tables on effects.</li>
+                <li>Trained economists and interns on Git and Python best practices; led documentation and process workshops.</li>
+                <li>Technical lead on major projects including dynamic tax modeling tools, workflow redesign migrating from TravisCI to Github Actions.</li>
+                <li>Expanded the functionality and detail of various calculations in modules in the tax model including EITC, Payroll Tax, and Corporate Income Tax.</li>
+                <li>Oversaw management of AWS resources relating to the web deployment of the model provided to congressional staff, usage monitoring on Google analytics, and the cleanup of AWS resources when the project was sunset.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <div class="company">Ochsner Health — New Orleans, LA - Hybrid Remote</div>
+                <div class="date">2020 – Oct 2022</div>
+            </div>
+            <div class="position">Data Analyst (R&D)</div>
+            <div class="job-skills">Skills: Linux, Tableau, Tableau Server, SQL, Python</div>
+            <ul>
+                <li>Built Tableau dashboards and SQL data pipelines used by 100+ state and local health officials to monitor COVID-19 and vaccine outreach.</li>
+                <li>Collaborated with physicians and analysts to generate insights from clinical and behavioral datasets on outreach and patient outcomes.</li>
+                <li>Wrote and modified large SQL queries for the creation of Tableau data sources pulling from the Caboodle and Clarity databases under Epic EMR.</li>
+                <li>Managed the maintenance and updates of various data sources on Tableau Server for multiple dashboards for population health monitoring.</li>
+                <li>Worked with technical and non-technical users to develop and iterate on the requirements of dashboards in development of upcoming dashboards and the maintenance of live dashboards.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <div class="company">CGI Technology and Solutions – Lafayette, LA</div>
+                <div class="date">2018 - 2020</div>
+            </div>
+            <div class="position">Technical Consultant</div>
+            <div class="job-skills">Skills: AWS, Python, Github, Jenkins, Hadoop, SQL</div>
+            <ul>
+                <li>Developed automated CI/CD tests and deployment for code using a TDD model in Jenkins, cataloging for global data ingestion pipelines.</li>
+                <li>Wrote code for logging with Splunk and triggering Cloudwatch alarms from Splunk logs in AWS during the ingestion process.</li>
+                <li>Collaborated with international teams on data governance strategies and progress tracking during global data ingestion from on-prem data centers into a Hadoop data lake.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <div class="company">Economic Science Institute, Chapman University - Orange, CA</div>
+                <div class="date">2015 - 2017</div>
+            </div>
+            <div class="position">Research Assistant</div>
+            <div class="job-skills">Skills: Python, Mathematica, Matlab, Genetic Algorithms, Dynamic Programming</div>
+            <ul>
+                <li>Wrote and delivered instructions for economic research experiments.</li>
+                <li>Wrote python code to model a faculty research environment using a Dynamic Program to find the optimal performance pattern for participants.</li>
+                <li>Extended the dynamic programming model to compare participant behavior against the optimal strategy, displaying the marginal loss of specific decisions.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <div class="company">Phoenix Afterglow, Irvine, CA</div>
+                <div class="date">2015</div>
+            </div>
+            <div class="position">Junior Web Developer</div>
+            <div class="job-skills">Skills: HTML, CSS, Javascript</div>
+            <ul>
+                <li>Built out new websites for local business clients using HTML, CSS, and Javascript.</li>
+                <li>Managed and maintained websites for clients, updating webpages and assets upon request and monitoring website health.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Education</h2>
+        
+        <div class="education">
+            <div class="edu-header">
+                <div class="degree">MS in Economic Systems and Design</div>
+                <div class="date">2017</div>
+            </div>
+            <div class="university">Chapman University</div>
+            <div>Relevant Coursework: Data Mining, Machine Learning, Computational Economics, Auction Theory, Game Theory I / II, Experimental Design and Statistics</div>
+        </div>
+        
+        <div class="education">
+            <div class="edu-header">
+                <div class="degree">BS in Computer Science // Minor in Mathematics</div>
+                <div class="date">2015</div>
+            </div>
+            <div class="university">Chapman University</div>
+            <div>Relevant Coursework: Probability Theory, Mathematical Statistics, Compiler Construction, Programming Languages, Artificial Intelligence</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Community and Mentorship</h2>
+        <ul>
+            <li>Mentored analysts, interns, and economists in Python, Git, and modeling workflows at Tax Foundation and Ochsner.</li>
+            <li>Led internal workshops and documentation efforts for new hires and economists.</li>
+            <li>Built out best practice documents for workflows, coding, and data management at CGI and Tax Foundation.</li>
+            <li>Led efforts at CGI and Tax Foundation to increase and centralize project documentation to increase availability and transparency of knowledge.</li>
+        </ul>
+    </section>
+    
+    <!-- Visitor counter for AWS Challenge -->
+    <div class="visitor-counter">
+        <p>This page has been viewed <span id="visitor-count">Loading...</span> times</p>
+    </div>
+    
+    <footer>
+        <p>This site is part of the AWS Cloud Resume Challenge | Last Updated: May 2025</p>
+    </footer>
+    
+    <!-- Script for visitor counter - This will be implemented when you connect to the API -->
+    <script>
+        // This will be replaced with the actual API call to your AWS backend
+        document.addEventListener('DOMContentLoaded', function() {
+            // Placeholder for API call to Lambda function
+            // fetch('YOUR_API_GATEWAY_URL')
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         document.getElementById('visitor-count').textContent = data.count;
+            //     })
+            //     .catch(error => {
+            //         console.error('Error fetching visitor count:', error);
+            //         document.getElementById('visitor-count').textContent = 'Error loading count';
+            //     });
+            
+            // Temporary placeholder
+            document.getElementById('visitor-count').textContent = '0';
+        });
+    </script>
+</body>
+</html>
